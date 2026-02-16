@@ -33,13 +33,13 @@ main {
   margin: 0 auto;
   padding: 0 20px 60px;
 
-  background: url('polaroid.png') no-repeat center 160px;
+  background: url('polaroid.png') no-repeat center 90px;
   background-size: 520px auto; 
 
 
 .hero {
   text-align: center;
-  padding-bottom: 420px; 
+  padding-bottom: 400px; 
   min-height: 0;         
 }
 
