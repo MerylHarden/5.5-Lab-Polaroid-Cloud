@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
 
-/* reset */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 img { max-width: 100%; display: block; }
@@ -29,46 +28,48 @@ header h1 {
 }
 
 main {
-  max-width: 460px;           /* matches your mobile comp feel */
+  max-width: 460px;     
   width: 100%;
   margin: 0 auto;
   padding: 0 20px 60px;
 
-  background: url('polaroid.png') no-repeat center 90px;
-  background-size: 520px auto; /* tweak this */
-}
+  background: url('polaroid.png') no-repeat center 160px;
+  background-size: 520px auto; 
 
 .hero {
   text-align: center;
   padding-top: 90px;
-  padding-bottom: 260px; /* creates room for the polaroid image */
+  padding-bottom: 200px; 
+  min-height: 0;         
 }
 
 .hero h2 {
   margin: 0;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 1px;
   font-size: clamp(3rem, 10vw, 5.2rem);
   line-height: 0.95;
 }
 
-.details h3 {
-  margin: 16px 0 10px;
-  font-weight: 900;
+.details {
   text-align: center;
+  
+}
+
+.details h3{
+  margin-top: 60px;
 }
 
 .details p {
   margin: 0 auto 16px;
   max-width: 42ch;
   font-size: 14px;
-  text-align: center;
 }
-
 .details ul {
-  margin: 10px 0 0;
   padding: 0;
+  margin: 0 auto;
+  display: inline-block; 
+  text-align: left;      
 }
 
 .details ul li {
@@ -79,14 +80,14 @@ main {
   line-height: 1.35;
 
   background-repeat: no-repeat;
-  background-position: 0 2px;
+  background-position: left center; 
   background-size: 18px 18px;
 }
 
-.details ul li.wifi  { background-image: url('wifi-solid.svg'); }
-.details ul li.cloud { background-image: url('cloud-arrow-up-solid.svg'); }
 .details ul li.qr    { background-image: url('qrcode-solid.svg'); }
-.details ul li.photo { background-image: url('cloud-arrow-up-solid.svg'); }
+.details ul li.cloud { background-image: url('cloud-arrow-up-solid.svg'); }
+.details ul li.wifi  { background-image: url('wifi-solid.svg'); }
+.details ul li.photo { background-image: url('photo-film-solid.svg'); }
 
 .cta {
   margin-top: 24px;
@@ -99,18 +100,24 @@ main {
 }
 
 .cta form {
+  background: #dedede;
+  border-radius: 14px;
+  padding: 14px;
   display: flex;
   gap: 10px;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .cta input[type="text"] {
-  width: min(320px, 100%);
+  flex: 1;
+  min-width: 0;
   padding: 12px 14px;
-  border: 1px solid #cfcfcf;
+  border: none;
   border-radius: 10px;
+  background: #f2f2f2;
   font: inherit;
+  font-size: 13px;
 }
 
 .cta input[type="button"] {
@@ -118,8 +125,10 @@ main {
   border: none;
   border-radius: 10px;
   background: var(--accent-color);
-  color: #fff;
+  color: white;
   font: inherit;
   font-weight: 900;
+  text-transform: uppercase;
+  font-size: 12px;
   cursor: pointer;
 }
