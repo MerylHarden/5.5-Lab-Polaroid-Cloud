@@ -36,12 +36,13 @@ main {
   background: url('polaroid.png') no-repeat center 160px;
   background-size: 520px auto; 
 
+
 .hero {
   text-align: center;
-  padding-top: 90px;
-  padding-bottom: 200px; 
+  padding-bottom: 420px; 
   min-height: 0;         
 }
+
 
 .hero h2 {
   margin: 0;
@@ -52,8 +53,8 @@ main {
 }
 
 .details {
-  text-align: center;
-  
+  padding-top: 20px; 
+  text-align: center;   
 }
 
 .details h3{
